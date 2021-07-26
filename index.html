@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>css only child and velid and invelid</title>
+   <style type="text/css" media="all">
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+      body {
+         display: grid;
+         place-items: center;
+         width: 100vw;
+         height: 100vh;
+         background-color: indigo;
+      }
+      form {
+         font-weight: bold;
+         padding: 15px 10px;
+         color: lightgrey;
+         width: 315px;
+         height: 200px;
+         background-color: black;
+         border-radius: 10px;
+         border: 1px solid lightgrey;
+         box-shadow: 2px 10px 20px black;
+      }
+      input {
+         border-radius: 7px;
+         background: transparent;
+         border: 1px solid grey;
+         outline: none;
+         color: #fff;
+         padding: 5px;
+      }
+      input:focus {
+         background-color: indigo;
+      }
+      input:invalid {
+         border: 1px solid red;
+      }
+      input:valid {
+         border: 1px solid blue;
+      }
+   </style>
+</head>
+<body>
+   <form action="#" method="get" accept-charset="utf-8">
+      Enter Your Name : <input type="text" name="name" id="name" value="" /><br /> <br />
+      Enter your Email : <input type="email" name="email" id="email" value="" />
+   </form>
+</body>
+</html>
